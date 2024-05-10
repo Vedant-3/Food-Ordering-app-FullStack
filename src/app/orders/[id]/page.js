@@ -47,7 +47,7 @@ export default function OrderPage() {
                 <div className="flex flex-col gap-8 md:flex-row md:gap-16">
                     <div>
                         {order.cartProducts.map(p => (
-                            <CartProduct product={p} />
+                            <CartProduct key={p._id} product={p} />
                         ))}
                         <div className="text-right py-2 text-gray-500">
                             Subtotal: <span className="text-black font-semibold ml-2">${subtotal}</span> <br/>
