@@ -61,7 +61,7 @@ export default function MenuItem(menuItem) {
                                 <div className="p-2">
                                     <h3 className="text-center italic mt-5 text-gray-700">Select Size:</h3>
                                     {sizes.map(size => (
-                                        <label className="flex items-center gap-2  p-4 border rounded-md mb-1 ">
+                                        <label key={size.name} className="flex items-center gap-2  p-4 border rounded-md mb-1 ">
                                             <input onClick={() => setSelectedSize(size)} checked={selectedSize?.name === size.name} type="radio" name={size} />{size.name} ${price + size.price}
                                         </label>
                                     ))}
@@ -71,7 +71,7 @@ export default function MenuItem(menuItem) {
                                 <div className="p-2">
                                     <h3 className="text-center italic mt-5 text-gray-700">Select Extra Toppings:</h3>
                                     {extra.map(extra => (
-                                        <label className="flex items-center gap-2  p-4 border rounded-md mb-1 ">
+                                        <label key={extra.name} className="flex items-center gap-2  p-4 border rounded-md mb-1 ">
                                             <input type="checkbox" onClick={ev => handleExtras(ev, extra)} name={extra.name} />{extra.name} +${extra.price}
                                         </label>
                                     ))}

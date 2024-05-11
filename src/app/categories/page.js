@@ -117,7 +117,7 @@ export default function CategoriesPage() {
             <div>
                 <h2 className="mt-8">Existing Category:</h2>
                 {categories.length > 0 && categories.map(c => (
-                    <div className="bg-gray-200 rounded-xl p-2 px-4 flex gap-1 mb-2">
+                    <div key={c.name} className="bg-gray-200 rounded-xl p-2 px-4 flex gap-1 mb-2">
                         <div className="grow cursor-pointer">{c.name}</div>
                         <div className="flex gap-1">
                             <button onClick={() => {

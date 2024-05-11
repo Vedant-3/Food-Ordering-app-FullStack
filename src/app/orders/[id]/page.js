@@ -57,7 +57,7 @@ export default function OrderPage() {
                     </div>
                     <div className=" p-4 mt-5 rounded-lg ">
                         <span className="font-bold text-gray-600 italic text-left">Delivery Details</span>
-                        <AddressInputs disabled={true} addressProp={...order} />
+                        <AddressInputs disabled={true} addressProp={order} />
                     </div>
                     
                 </div>
