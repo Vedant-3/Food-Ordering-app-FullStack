@@ -47,7 +47,7 @@ function AuthLinks({status, userName}) {
       <header>
         <div className="flex items-center md:hidden justify-between pr-2">
           <Link className="text-primary font-semibold text-2xl" href={'/'}>
-            ST PIZZA
+            V's PIZZA
           </Link>
           <div className="flex gap-8 items-center">
             <Link href={'/cart'} className="relative">
@@ -79,7 +79,7 @@ function AuthLinks({status, userName}) {
         <div className="hidden md:flex items-center justify-between">
           <nav className="flex items-center gap-8 text-gray-500 font-semibold">
             <Link className="text-primary font-semibold text-2xl" href={'/'}>
-              ST PIZZA
+              V's PIZZA
             </Link>
             <Link href={'/'}>Home</Link>
             <Link href={'/fullmenu'}>Menu</Link>

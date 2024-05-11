@@ -52,7 +52,7 @@ export default function MenuItem(menuItem) {
         <>
             {showPopup && (
                 <div className="fixed inset-0 bg-black/80 flex items-center justify-center" onClick={() => setShowPopup(false)}>
-                    <div className="my-8 bg-gray-800 p-2 rounded-lg max-w-lg " onClick={ev => ev.stopPropagation()}>
+                    <div className="my-8 bg-gray-200 p-2 rounded-lg max-w-lg " onClick={ev => ev.stopPropagation()}>
                         <div className="overflow-y-scroll mb-4 max-h-[650px]" >
                             <Image src={image} alt={name} width={200} height={200} className="mx-auto" />
                             <h2 className="text-lg font-bold text-center mb-2">{name}</h2>
@@ -61,7 +61,7 @@ export default function MenuItem(menuItem) {
                                 <div className="p-2">
                                     <h3 className="text-center italic mt-5 text-gray-700">Select Size:</h3>
                                     {sizes.map(size => (
-                                        <label key={size.name} className="flex items-center gap-2  p-4 border rounded-md mb-1 ">
+                                        <label key={size.name} className="flex items-center gap-2  p-4 border rounded-md mb-1 bg-gray-300">
                                             <input onClick={() => setSelectedSize(size)} checked={selectedSize?.name === size.name} type="radio" name={size} />{size.name} ${price + size.price}
                                         </label>
                                     ))}
@@ -71,7 +71,7 @@ export default function MenuItem(menuItem) {
                                 <div className="p-2">
                                     <h3 className="text-center italic mt-5 text-gray-700">Select Extra Toppings:</h3>
                                     {extra.map(extra => (
-                                        <label key={extra.name} className="flex items-center gap-2  p-4 border rounded-md mb-1 ">
+                                        <label key={extra.name} className="flex items-center gap-2  p-4 border rounded-md mb-1  bg-gray-300">
                                             <input type="checkbox" onClick={ev => handleExtras(ev, extra)} name={extra.name} />{extra.name} +${extra.price}
                                         </label>
                                     ))}

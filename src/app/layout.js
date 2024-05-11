@@ -6,7 +6,7 @@ import { AppProvider } from '../components/AppContext'
 const roboto = Roboto({ subsets: ["latin"], weight: ['400', '500', '700'] });
 
 export const metadata = {
-  title: "ST Pizza's",
+  title: "V's Pizza",
   description: "Freshly Baked and Served with love!!",
 };
 
