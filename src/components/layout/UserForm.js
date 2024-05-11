@@ -47,7 +47,7 @@ export default function UserForm({ user, onSave }) {
                
                 <AddressInputs addressProp={{phone,address,city,pincode}} setAddressProp={handleAddressChange}/>
 
-                {/* {loggedInUserData.admin && ( */}
+                {loggedInUserData.admin && (
                     <div>
                         <label className="p-2 inline-flex items-center gap-2" htmlFor="adminCb">
                             <input id='adminCb' type="checkbox" className="" value={'1'}
@@ -56,7 +56,7 @@ export default function UserForm({ user, onSave }) {
                             <span className="font-semibold text-gray-700">Admin</span>
                         </label>
                     </div>
-                {/* )} */}
+                )}
 
 
                 <button className='mt-3' type="submit">Save</button>
